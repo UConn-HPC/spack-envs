@@ -1,0 +1,33 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  # add package specs to the `specs` list
+  specs:
+  - gdal +hdf4 +hdf5 +jasper +netcdf +crypto +grib +curl ^hdf5 +hl ^openmpi +pmi fabrics=auto
+  view: false
+  mirrors: {}
+  repos: []
+  upstreams: {}
+  modules:
+    enable: []
+  definitions: []
+  packages:
+    cmake:
+      buildable: false
+      paths:
+        cmake@3.10.2: /apps2/cmake/3.10.2
+      version: []
+      providers: {}
+      modules: {}
+      compiler: []
+    gmake:
+      buildable: false
+      paths:
+        gmake@3.81: /usr
+      version: []
+      providers: {}
+      modules: {}
+      compiler: []
+  config: {}
